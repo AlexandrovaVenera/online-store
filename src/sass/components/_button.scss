@@ -1,0 +1,16 @@
+.button-link{
+  border-radius: 20px;
+  margin-left:auto;
+  margin-right: auto; 
+  border:  2px solid $color-default;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 350px;
+  //height: 60px;
+  & a{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: #000000;
+  }
+}
