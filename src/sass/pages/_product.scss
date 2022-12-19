@@ -1,0 +1,59 @@
+.about-product{
+    display: flex;
+}
+.product-list ul{
+  list-style-type: none;
+  display: flex;
+}
+.product__block{
+    padding-top: 50px;
+
+}
+.product-list li{
+    color: $color-text;  
+    padding-right: 10px;
+
+    &::before{
+        content: url('./../img/arrow.svg');
+        color: $color-text;
+
+    }
+    & a{
+        color: $color-text;
+
+    }
+
+}
+
+
+.product__desc{
+    max-width: 60%;
+}
+
+.main-picture{
+    max-width: 483px;
+    display: block;
+}
+.secondary__picture {
+    padding-top: 50px;
+    & >img{
+    max-width: 164px;
+}
+}
+.product__title{
+font-weight: 600;
+font-size: 32px;
+line-height: 39px;
+padding-bottom: 40px;
+
+}
+.product__feature{
+    display: flex;
+    & p:first-child{
+       width: 175px;
+    }
+}
+.product__card{
+    display: flex;
+    flex-direction: column;
+}
