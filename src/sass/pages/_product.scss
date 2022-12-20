@@ -1,5 +1,6 @@
 .about-product{
     display: flex;
+    justify-content: space-between;
 }
 .product-list ul{
   list-style-type: none;
@@ -9,25 +10,30 @@
     padding-top: 50px;
 
 }
+
 .product-list li{
     color: $color-text;  
-    padding-right: 10px;
+    padding-right: 30px;
 
-    &::before{
-        content: url('./../img/arrow.svg');
-        color: $color-text;
-
-    }
     & a{
         color: $color-text;
-
     }
-
 }
 
+.product-list li::before{
+    content: '';
+    background: url('./../img/arrow.png');
+    //color: $color-text;
+    width: 23px;
 
+}
+.product__card-title{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+}
 .product__desc{
-    max-width: 60%;
+    max-width: 50%;
 }
 
 .main-picture{
@@ -48,12 +54,15 @@ padding-bottom: 40px;
 
 }
 .product__feature{
-    display: flex;
-    & p:first-child{
-       width: 175px;
-    }
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 0.6fr 2fr;
+    padding-bottom: 20px;
+
+
 }
 .product__card{
     display: flex;
     flex-direction: column;
+    
 }
