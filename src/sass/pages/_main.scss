@@ -1,0 +1,45 @@
+.content__button{
+  margin-right: 20px;
+}
+.content-input{
+  width: 180px;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px;
+  padding: 13px 10px 13px 10px;
+}
+.filter{
+  width: 348px;
+  border: 1px solid #D9D9D9;
+border-radius: 20px;
+padding: 20px 20px 42px 20px;
+  & h2{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+.filter-input{
+  display: block;
+}
+.products{
+  max-width: 1452px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px 20px;
+  margin: 0 auto;
+}
+.product{
+  max-width: 348px;
+  border: 1px solid #D9D9D9;
+  border-radius: 31px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  & img{
+    width: 50%;
+    display: block;
+  }
+}
